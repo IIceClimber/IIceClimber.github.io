@@ -20,7 +20,10 @@ captred handshakes are saved as a ".pcap" format or ".pcapng" under the director
 There are many tools on the internet used for cracking hash files. the most popular include hashcat, Aircrack-ng and John the ripper. Furthermore the most recognised wordlist used to crack these hashes is rockyou.txt
 
 
+### Step 1 Getting Components 
+I managed to get all my components off amazon before they were listed as "unavailable"
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+
 
 ## Header 2
 
