@@ -21,7 +21,16 @@ There are many tools on the internet used for cracking hash files. the most popu
 
 
 ### Step 1 Getting Components 
-I managed to get all my components off amazon before they were listed as "unavailable"
+I managed to get all my components off amazon before they were listed as "unavailable".
+*  Raspberry Pi Zero WH
+*  PiSugar S (Battery)
+*  Waveshare 2.13 inch E-ink Display V4
+*  32 GB Micro SD card
+*  SD card to USB adaptor
+
+### Step 2 installing software
+
+
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
 
