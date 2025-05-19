@@ -12,7 +12,13 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 
 # Project 1 Pwnagotchi 
-My first project that I wanted to tackle was the pwnagotchi. A pwnagotchi is a small penertration testing tool used for Wi-Fi packet sniffing and handshake capture. 
+My first project that I wanted to tackle was the pwnagotchi. A pwnagotchi is a small penertration testing tool used for   Wi-Fi packet sniffing and handshake capture. The way it captures these handshakes is when a client or phone attempts to connect or reconnect to a router for internet. When they do connect they perform an action called a 4-way handshake with the access point. If the Pwnagotchi is listening at the right time and on the right channel, it can capture that handshake for later cracking.
+The pwnagotchi had another method of capturing handshakes if it cannot identify any client attempting to reconnect to an access point. The Pwnagotchi will send out deauth packets to force a client to reconnect, thus creating an opportunity to catch a handshake. 
+## Storage and processing
+captred handshakes are saved as a ".pcap" format or ".pcapng" under the directory "/root/handshakes"
+## Offline Cracking
+There are many tools on the internet used for cracking hash files. the most popular include hashcat, Aircrack-ng and John the ripper. Furthermore the most recognised wordlist used to crack these hashes is rockyou.txt
+
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
