@@ -29,9 +29,28 @@ I managed to get all my components off amazon before they were listed as "unavai
 *  SD card to USB adaptor
 
 ### Step 2 installing software
+In order to flash the image onto the SD card I will need a specific type of software that is used for flashing images onto memory cards. The software I chose was Belena Etcher.
+Furthermore the actual image that I used for this project is a modifyed version of the original image. The creator of this image is Jayofelony.... Specifically making sure that I incorporate the 64 bitversion
+of the image and not the 32 bit version 
+#### Troubleshooting software 
+
+### Step 3 physical connection and driver installation
+Once the raspberry pi has its SD card installed, the next task is to plug the device into my computer with the help of a micro SD card connector. The device will appear as a device called USB serial device COM# 
+under the "Ports" tab within the device manager application on windows. The COM number will be differernce to all computers, its important to correctly identify if the plugged device is that specifyed USB device
+this can be verified by plugging the device out and remembering which device is not present under the Ports tab. When drivers are installed, it will change the USB serical device into a network adaptor. This is extremely important since there needs to be a serial connection made to the device in the future once the device 
+is operational.
+
+The link to the drivers is .......
+once the drivers are installed, they need to be extracted onto your desktop or which ever place is preferable. WinRAR is recommended for extracting files howevery, any other extraction software can be used.
+Once they are extracted there will be 2 files called RNDIS. the file we need to install looks like a blankfile with a gear on the bottom left. Right click the file and up the top, click on install.
+It will only take a few seconds to install. when connecting the raspberry device back into the computer, it should come up as a network device. it should be called "USB Ethernet/RNDIS Gadget".
+
+### Setting up Network Configurations 
+Now that the raspberry Pi is now a dedicated network device, it can now be configured with an IP address. this can be access though control panel by holding "windows key + r" and typing in "control".
+On the top right, there is a search bar. type in "Network and sharing" then make you way to "change adaptor settings". you can now access to Ip settings of the raspberry Pi by right clicking it and choosing "Properties".
 
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+
 
 
 ## Header 2
