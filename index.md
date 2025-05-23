@@ -49,6 +49,13 @@ It will only take a few seconds to install. when connecting the raspberry device
 Now that the raspberry Pi is now a dedicated network device, it can now be configured with an IP address. this can be access though control panel by holding "windows key + r" and typing in "control".
 On the top right, there is a search bar. type in "Network and sharing" then make you way to "change adaptor settings". you can now access to Ip settings of the raspberry Pi by right clicking it and choosing "Properties".
 
+The information will be as follows. 
+IP address  10.0.0.1
+Subnetmask  255.255.255.0
+
+Leave the DNS setting for later as that will be changed later on. 
+
+### installing screen 
 
 
 
