@@ -56,9 +56,33 @@ Subnetmask  255.255.255.0
 Leave the DNS setting for later as that will be changed later on. 
 
 ### installing screen 
+installing the screen was a bit tricky since it required equal pressure applied on both sides of the screen as well as 
+making sure that you dont bend any of the IO pins located on the Pi Zero. 
 
+### connecting to the Pwnagotchi 
+The software we need for connecting to the device is "Putty". This will allow us to communicate with the raspberry pi and login to the device. The default login credentials are
+Username: pi 
+Passwd: raspberry 
 
+###Configuring pwnagotchi 
+once the connection has been established and the raspberry PI is accessed we would need to configure the default password so that it can't be access by any unauthoried users. The command for changing the password is 
+"passwd pi
 
+next is changing the configuration setting
+
+we will use the command "Sudo pwnagothi --wizard" to start the configuration process 
+
+It will ask if we want to restore the previous configuration, press N since we dont have an existing configuration 
+
+Next question is about overwriting the current configuration file press Y since we will be creating a new configuraton 
+
+Name you pwnagotchi to whatever name that suits you
+
+It will then ask you about the number of networks you would like to whitelist. These networks will not be targeted by the pwnagotchi, in this case, i entered by home networks SSID and MAC address 
+
+then it will ask you about bluetooth-tethering, enter N since we will touch back on that topic once everything is setup 
+
+press Y for the screen being displayed since it will allow the pwnagotchi to display information on the physical device. For the type of display we are using the Display type is "waveshare_4". For the preferernce of display color, the choice is purely cosmetic and can be changed later in the furture. 
 
 ## Header 2
 
