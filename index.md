@@ -55,6 +55,12 @@ Subnetmask  255.255.255.0
 
 Leave the DNS setting for later as that will be changed later on. 
 
+### Troubleshooting 
+Make sure to enter this command into admin powershell as this will enable internet sharing for the pwnagotchi 
+"powershell -ExecutionPolicy ByPass -File .\win_connection_share.ps1 -SetPwnagotchiSubnet"
+"powershell -ExecutionPolicy ByPass -File .\win_connection_share.ps1 -EnableInternetConnectionSharing"
+once these commands are executed within the admin powershell session, there should be internet shareing enabled for the pwnagotchi, just make sure that the windows computer is restarted. 
+
 ### installing screen 
 installing the screen was a bit tricky since it required equal pressure applied on both sides of the screen as well as 
 making sure that you dont bend any of the IO pins located on the Pi Zero. 
@@ -84,6 +90,11 @@ then it will ask you about bluetooth-tethering, enter N since we will touch back
 
 press Y for the screen being displayed since it will allow the pwnagotchi to display information on the physical device. For the type of display we are using the Display type is "waveshare_4". For the preferernce of display color, the choice is purely cosmetic and can be changed later in the furture. 
 
+Currently the Screen doesnt not refresh fast enough for the pwnagotchi to provide any meaningful information. we will configure a file so that the screen refreshes after a shorter amount of time 
+
+we will head to "cd /etc/pwnagotchi/" and edit a file using "sudo nano config.toml". At a space below the original text add "ui.fps = 1", this will refresh the screen once every second, press "ctrl + x" and then press "Y" to save configurations. 
+
+for these changes to be implemented make sure to restart the device with the command "systemctl restart pwnagotchi.service" 
 ## Header 2
 
 > This is a blockquote following a header.
