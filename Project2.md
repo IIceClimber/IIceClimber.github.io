@@ -1,18 +1,4 @@
----
-layout: default
----
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
 ## Aquiring Firmware
 First we need a specific WI-FI adaptor, it must contain the RT5370 chipset so that it is compatable with out software  
@@ -37,33 +23,3 @@ On the main page in open Wrt, hover over the systems tab on the top, and select 
 ## Setting up the pineapple 
 if you cant open the web page through the IP address, just go to the ip address setting for the pineapple on your laptop for computer and change the staticly assigned ip address that we gave to automatic, make sure that dnz settings is also set to automatic. After configuration, we should be able to access the ip address through the web. after contnuting through the pop up mesages, the last pop up will tell us that the "WIFI pineapple is still booting", this is when you will connect the wifi adaptor to the pineapple ans the npress the reset button just once. once done right the message should go away. with configurations you will need to manage some settings before continuing. make sure that you set a root password before continueing, furthermore you can set up a management SSID for the pineapple it can be what ever name we choose, further down the client and SSID filter settings both need to be set as "allow" as well as ticking both boxsfor the EULA. After logging into the pineapple with the root password you just created we now have access to the pineapple dashboard. 
 
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
